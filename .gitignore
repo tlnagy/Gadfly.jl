@@ -1,3 +1,0 @@
-#ignore files output from runtests.jl
-test/output
-doc/html
