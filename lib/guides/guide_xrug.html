@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Guide.xrug · Gadfly.jl documentation</title><link href="../../assets/documenter.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="../.."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" data-main="../../assets/documenter.js"></script></head><body><nav class="toc"><a href><img class="logo" src="../../assets/logo.png" alt="Gadfly.jl logo"/></a><h1>Gadfly.jl</h1><form class="search" action="../../search.html"><input id="search-query" name="q" type="text" placeholder="Search docs"/></form><ul><li><a class="toctext" href="../../index.html">Home</a></li><li><span class="toctext">Manual</span><ul><li><a class="toctext" href="../../man/plotting.html">Plotting</a></li><li><a class="toctext" href="../../man/layers.html">Stacks &amp; Layers</a></li><li><a class="toctext" href="../../man/backends.html">Backends</a></li><li><a class="toctext" href="../../man/themes.html">Themes</a></li><li><a class="toctext" href="../../man/geometries.html">Geometries</a></li><li><a class="toctext" href="../../man/guides.html">Guides</a></li><li><a class="toctext" href="../../man/stats.html">Statistics</a></li><li><a class="toctext" href="../../man/coords.html">Coords</a></li><li><a class="toctext" href="../../man/scales.html">Scales</a></li></ul></li><li><span class="toctext">Library</span><ul><li><a class="toctext" href="../dev_pipeline.html">Rendering Pipeline</a></li><li><span class="toctext">geoms</span><ul><li><a class="toctext" href="../geoms/geom_bar.html">Geom.bar</a></li><li><a class="toctext" href="../geoms/geom_beeswarm.html">Geom.beeswarm</a></li><li><a class="toctext" href="../geoms/geom_boxplot.html">Geom.boxplot</a></li><li><a class="toctext" href="../geoms/geom_contour.html">Geom.contour</a></li><li><a class="toctext" href="../geoms/geom_density.html">Geom.density</a></li><li><a class="toctext" href="../geoms/geom_errorbar.html">Geom.errorbar</a></li><li><a class="toctext" href="../geoms/geom_hexbin.html">Geom.hexbin</a></li><li><a class="toctext" href="../geoms/geom_histogram.html">Geom.histogram</a></li><li><a class="toctext" href="../geoms/geom_histogram2d.html">Geom.histogram2d</a></li><li><a class="toctext" href="../geoms/geom_hline.html">Geom.hline</a></li><li><a class="toctext" href="../geoms/geom_label.html">Geom.label</a></li><li><a class="toctext" href="../geoms/geom_line.html">Geom.line</a></li><li><a class="toctext" href="../geoms/geom_path.html">Geom.path</a></li><li><a class="toctext" href="../geoms/geom_point.html">Geom.point</a></li><li><a class="toctext" href="../geoms/geom_polygon.html">Geom.polygon</a></li><li><a class="toctext" href="../geoms/geom_rectbin.html">Geom.rectbin</a></li><li><a class="toctext" href="../geoms/geom_ribbon.html">Geom.ribbon</a></li><li><a class="toctext" href="../geoms/geom_smooth.html">Geom.smooth</a></li><li><a class="toctext" href="../geoms/geom_step.html">Geom.step</a></li><li><a class="toctext" href="../geoms/geom_subplot_grid.html">Geom.subplot_grid</a></li><li><a class="toctext" href="../geoms/geom_violin.html">Geom.violin</a></li><li><a class="toctext" href="../geoms/geom_vline.html">Geom.vline</a></li></ul></li><li><span class="toctext">guides</span><ul><li><a class="toctext" href="guide_annotation.html">Guide.annotation</a></li><li><a class="toctext" href="guide_colorkey.html">Guide.colorkey</a></li><li><a class="toctext" href="guide_manual_color_key.html">Guide.manual_color_key</a></li><li><a class="toctext" href="guide_title.html">Guide.title</a></li><li><a class="toctext" href="guide_xlabel.html">Guide.xlabel</a></li><li class="current"><a class="toctext" href="guide_xrug.html">Guide.xrug</a><ul class="internal"><li><a class="toctext" href="#Aesthetics-1">Aesthetics</a></li><li><a class="toctext" href="#Examples-1">Examples</a></li></ul></li><li><a class="toctext" href="guide_xticks.html">Guide.xticks</a></li><li><a class="toctext" href="guide_ylabel.html">Guide.ylabel</a></li><li><a class="toctext" href="guide_yrug.html">Guide.yrug</a></li><li><a class="toctext" href="guide_yticks.html">Guide.yticks</a></li></ul></li><li><span class="toctext">stats</span><ul><li><a class="toctext" href="../stats/stat_binmean.html">Stat.binmean</a></li><li><a class="toctext" href="../stats/stat_qq.html">Stat.qq</a></li><li><a class="toctext" href="../stats/stat_step.html">Stat.step</a></li><li><a class="toctext" href="../stats/stat_xticks.html">Stat.xticks</a></li><li><a class="toctext" href="../stats/stat_yticks.html">Stat.yticks</a></li></ul></li><li><span class="toctext">coords</span><ul><li><a class="toctext" href="../coords/coord_cartesian.html">Coord.cartesian</a></li></ul></li><li><span class="toctext">scales</span><ul><li><a class="toctext" href="../scales/scale_color_continuous.html">Scale.color_continuous</a></li><li><a class="toctext" href="../scales/scale_color_discrete_hue.html">Scale.color_discrete_hue</a></li><li><a class="toctext" href="../scales/scale_color_discrete_manual.html">Scale.color_discrete_manual</a></li><li><a class="toctext" href="../scales/scale_color_none.html">Scale.color_none</a></li><li><a class="toctext" href="../scales/scale_x_continuous.html">Scale.x_continuous</a></li><li><a class="toctext" href="../scales/scale_x_discrete.html">Scale.x_discrete</a></li><li><a class="toctext" href="../scales/scale_y_continuous.html">Scale.y_continuous</a></li><li><a class="toctext" href="../scales/scale_y_discrete.html">Scale.y_discrete</a></li></ul></li></ul></li></ul></nav><article id="docs"><header><nav><ul><li>Library</li><li>guides</li><li><a href="guide_xrug.html">Guide.xrug</a></li></ul><a class="edit-page" href="https://github.com/tlnagy/Gadfly.jl/tree/60763a975ac23479b87ab039437afa0430612950/docs/src/lib/guides/guide_xrug.md"><span class="fa"></span> Edit on GitHub</a></nav><hr/></header><h1><a class="nav-anchor" id="Guide.xrug-1" href="#Guide.xrug-1">Guide.xrug</a></h1><p>Draw a rug plot along the x-axis of a plot.</p><h2><a class="nav-anchor" id="Aesthetics-1" href="#Aesthetics-1">Aesthetics</a></h2><ul><li><p><code>x</code>: X positions of notches.</p></li></ul><h2><a class="nav-anchor" id="Examples-1" href="#Examples-1">Examples</a></h2><div></div><div><pre><code class="language-julia">plot(x=rand(20), y=rand(20), Guide.xrug)</code></pre><?xml version="1.0" encoding="UTF-8"?>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Guide.xrug · Gadfly.jl documentation</title><link href="../../assets/documenter.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="../.."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.2.0/require.min.js" data-main="../../assets/documenter.js"></script></head><body><nav class="toc"><a href><img class="logo" src="../../assets/logo.png" alt="Gadfly.jl logo"/></a><h1>Gadfly.jl</h1><form class="search" action="../../search.html"><input id="search-query" name="q" type="text" placeholder="Search docs"/></form><ul><li><a class="toctext" href="../../index.html">Home</a></li><li><span class="toctext">Manual</span><ul><li><a class="toctext" href="../../man/plotting.html">Plotting</a></li><li><a class="toctext" href="../../man/layers.html">Stacks &amp; Layers</a></li><li><a class="toctext" href="../../man/backends.html">Backends</a></li><li><a class="toctext" href="../../man/themes.html">Themes</a></li><li><a class="toctext" href="../../man/geometries.html">Geometries</a></li><li><a class="toctext" href="../../man/guides.html">Guides</a></li><li><a class="toctext" href="../../man/stats.html">Statistics</a></li><li><a class="toctext" href="../../man/coords.html">Coords</a></li><li><a class="toctext" href="../../man/scales.html">Scales</a></li></ul></li><li><span class="toctext">Library</span><ul><li><a class="toctext" href="../dev_pipeline.html">Rendering Pipeline</a></li><li><span class="toctext">geoms</span><ul><li><a class="toctext" href="../geoms/geom_bar.html">Geom.bar</a></li><li><a class="toctext" href="../geoms/geom_beeswarm.html">Geom.beeswarm</a></li><li><a class="toctext" href="../geoms/geom_boxplot.html">Geom.boxplot</a></li><li><a class="toctext" href="../geoms/geom_contour.html">Geom.contour</a></li><li><a class="toctext" href="../geoms/geom_density.html">Geom.density</a></li><li><a class="toctext" href="../geoms/geom_errorbar.html">Geom.errorbar</a></li><li><a class="toctext" href="../geoms/geom_hexbin.html">Geom.hexbin</a></li><li><a class="toctext" href="../geoms/geom_histogram.html">Geom.histogram</a></li><li><a class="toctext" href="../geoms/geom_histogram2d.html">Geom.histogram2d</a></li><li><a class="toctext" href="../geoms/geom_hline.html">Geom.hline</a></li><li><a class="toctext" href="../geoms/geom_label.html">Geom.label</a></li><li><a class="toctext" href="../geoms/geom_line.html">Geom.line</a></li><li><a class="toctext" href="../geoms/geom_path.html">Geom.path</a></li><li><a class="toctext" href="../geoms/geom_point.html">Geom.point</a></li><li><a class="toctext" href="../geoms/geom_polygon.html">Geom.polygon</a></li><li><a class="toctext" href="../geoms/geom_rectbin.html">Geom.rectbin</a></li><li><a class="toctext" href="../geoms/geom_ribbon.html">Geom.ribbon</a></li><li><a class="toctext" href="../geoms/geom_smooth.html">Geom.smooth</a></li><li><a class="toctext" href="../geoms/geom_step.html">Geom.step</a></li><li><a class="toctext" href="../geoms/geom_subplot_grid.html">Geom.subplot_grid</a></li><li><a class="toctext" href="../geoms/geom_violin.html">Geom.violin</a></li><li><a class="toctext" href="../geoms/geom_vline.html">Geom.vline</a></li></ul></li><li><span class="toctext">guides</span><ul><li><a class="toctext" href="guide_annotation.html">Guide.annotation</a></li><li><a class="toctext" href="guide_colorkey.html">Guide.colorkey</a></li><li><a class="toctext" href="guide_manual_color_key.html">Guide.manual_color_key</a></li><li><a class="toctext" href="guide_title.html">Guide.title</a></li><li><a class="toctext" href="guide_xlabel.html">Guide.xlabel</a></li><li class="current"><a class="toctext" href="guide_xrug.html">Guide.xrug</a><ul class="internal"><li><a class="toctext" href="#Aesthetics-1">Aesthetics</a></li><li><a class="toctext" href="#Examples-1">Examples</a></li></ul></li><li><a class="toctext" href="guide_xticks.html">Guide.xticks</a></li><li><a class="toctext" href="guide_ylabel.html">Guide.ylabel</a></li><li><a class="toctext" href="guide_yrug.html">Guide.yrug</a></li><li><a class="toctext" href="guide_yticks.html">Guide.yticks</a></li></ul></li><li><span class="toctext">stats</span><ul><li><a class="toctext" href="../stats/stat_binmean.html">Stat.binmean</a></li><li><a class="toctext" href="../stats/stat_qq.html">Stat.qq</a></li><li><a class="toctext" href="../stats/stat_step.html">Stat.step</a></li><li><a class="toctext" href="../stats/stat_xticks.html">Stat.xticks</a></li><li><a class="toctext" href="../stats/stat_yticks.html">Stat.yticks</a></li></ul></li><li><span class="toctext">coords</span><ul><li><a class="toctext" href="../coords/coord_cartesian.html">Coord.cartesian</a></li></ul></li><li><span class="toctext">scales</span><ul><li><a class="toctext" href="../scales/scale_color_continuous.html">Scale.color_continuous</a></li><li><a class="toctext" href="../scales/scale_color_discrete_hue.html">Scale.color_discrete_hue</a></li><li><a class="toctext" href="../scales/scale_color_discrete_manual.html">Scale.color_discrete_manual</a></li><li><a class="toctext" href="../scales/scale_color_none.html">Scale.color_none</a></li><li><a class="toctext" href="../scales/scale_x_continuous.html">Scale.x_continuous</a></li><li><a class="toctext" href="../scales/scale_x_discrete.html">Scale.x_discrete</a></li><li><a class="toctext" href="../scales/scale_y_continuous.html">Scale.y_continuous</a></li><li><a class="toctext" href="../scales/scale_y_discrete.html">Scale.y_discrete</a></li></ul></li></ul></li></ul></nav><article id="docs"><header><nav><ul><li>Library</li><li>guides</li><li><a href="guide_xrug.html">Guide.xrug</a></li></ul><a class="edit-page" href="https://github.com/tlnagy/Gadfly.jl/tree/771979a730b5289c9d70b5601cdd77653979d9e1/docs/src/lib/guides/guide_xrug.md"><span class="fa"></span> Edit on GitHub</a></nav><hr/></header><h1><a class="nav-anchor" id="Guide.xrug-1" href="#Guide.xrug-1">Guide.xrug</a></h1><p>Draw a rug plot along the x-axis of a plot.</p><h2><a class="nav-anchor" id="Aesthetics-1" href="#Aesthetics-1">Aesthetics</a></h2><ul><li><p><code>x</code>: X positions of notches.</p></li></ul><h2><a class="nav-anchor" id="Examples-1" href="#Examples-1">Examples</a></h2><div></div><div><pre><code class="language-julia">plot(x=rand(20), y=rand(20), Guide.xrug)</code></pre><?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns:gadfly="http://www.gadflyjl.org/ns"
@@ -10,109 +10,103 @@
      stroke-width="0.3"
      font-size="3.88"
 >
-<g class="plotroot xscalable yscalable" id="img-b31536fd-1">
-  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="img-b31536fd-2">
-    <text x="75.91" y="68.39" text-anchor="middle" dy="0.6em">x</text>
+<g class="plotroot xscalable yscalable" id="img-00969fa9-1">
+  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="img-00969fa9-2">
+    <text x="76.75" y="68.39" text-anchor="middle" dy="0.6em">x</text>
   </g>
-  <g class="guide xlabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="img-b31536fd-3">
-    <text x="18.83" y="61.72" text-anchor="middle" dy="0.6em">0.00</text>
-    <text x="47.37" y="61.72" text-anchor="middle" dy="0.6em">0.25</text>
-    <text x="75.91" y="61.72" text-anchor="middle" dy="0.6em">0.50</text>
-    <text x="104.46" y="61.72" text-anchor="middle" dy="0.6em">0.75</text>
-    <text x="133" y="61.72" text-anchor="middle" dy="0.6em">1.00</text>
+  <g class="guide xlabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="img-00969fa9-3">
+    <text x="20.5" y="61.72" text-anchor="middle" dy="0.6em">0.0</text>
+    <text x="76.75" y="61.72" text-anchor="middle" dy="0.6em">0.5</text>
+    <text x="133" y="61.72" text-anchor="middle" dy="0.6em">1.0</text>
   </g>
-<g clip-path="url(#img-b31536fd-4)">
-  <g class="guide yfixed" stroke-width="0.3" stroke="#00BFFF" id="img-b31536fd-5">
-    <path fill="none" d="M99.3,59.12 L 99.3 60.32"/>
-    <path fill="none" d="M32.09,59.12 L 32.09 60.32"/>
-    <path fill="none" d="M25.3,59.12 L 25.3 60.32"/>
-    <path fill="none" d="M68.32,59.12 L 68.32 60.32"/>
-    <path fill="none" d="M97.61,59.12 L 97.61 60.32"/>
-    <path fill="none" d="M44.12,59.12 L 44.12 60.32"/>
-    <path fill="none" d="M97.44,59.12 L 97.44 60.32"/>
-    <path fill="none" d="M45.76,59.12 L 45.76 60.32"/>
-    <path fill="none" d="M112.05,59.12 L 112.05 60.32"/>
-    <path fill="none" d="M57.63,59.12 L 57.63 60.32"/>
-    <path fill="none" d="M56.77,59.12 L 56.77 60.32"/>
-    <path fill="none" d="M51.88,59.12 L 51.88 60.32"/>
-    <path fill="none" d="M63.52,59.12 L 63.52 60.32"/>
-    <path fill="none" d="M25.93,59.12 L 25.93 60.32"/>
-    <path fill="none" d="M43.06,59.12 L 43.06 60.32"/>
-    <path fill="none" d="M70.09,59.12 L 70.09 60.32"/>
-    <path fill="none" d="M119.15,59.12 L 119.15 60.32"/>
-    <path fill="none" d="M112.26,59.12 L 112.26 60.32"/>
-    <path fill="none" d="M66.02,59.12 L 66.02 60.32"/>
-    <path fill="none" d="M30,59.12 L 30 60.32"/>
+<g clip-path="url(#img-00969fa9-4)">
+  <g class="guide yfixed" stroke-width="0.3" stroke="#00BFFF" id="img-00969fa9-5">
+    <path fill="none" d="M61.04,59.12 L 61.04 60.32"/>
+    <path fill="none" d="M82.07,59.12 L 82.07 60.32"/>
+    <path fill="none" d="M45.9,59.12 L 45.9 60.32"/>
+    <path fill="none" d="M90.8,59.12 L 90.8 60.32"/>
+    <path fill="none" d="M92.94,59.12 L 92.94 60.32"/>
+    <path fill="none" d="M130.7,59.12 L 130.7 60.32"/>
+    <path fill="none" d="M67.25,59.12 L 67.25 60.32"/>
+    <path fill="none" d="M45.04,59.12 L 45.04 60.32"/>
+    <path fill="none" d="M81.45,59.12 L 81.45 60.32"/>
+    <path fill="none" d="M55.79,59.12 L 55.79 60.32"/>
+    <path fill="none" d="M102.91,59.12 L 102.91 60.32"/>
+    <path fill="none" d="M92.95,59.12 L 92.95 60.32"/>
+    <path fill="none" d="M104.28,59.12 L 104.28 60.32"/>
+    <path fill="none" d="M26.09,59.12 L 26.09 60.32"/>
+    <path fill="none" d="M42.8,59.12 L 42.8 60.32"/>
+    <path fill="none" d="M72.18,59.12 L 72.18 60.32"/>
+    <path fill="none" d="M74.91,59.12 L 74.91 60.32"/>
+    <path fill="none" d="M51.15,59.12 L 51.15 60.32"/>
+    <path fill="none" d="M66.14,59.12 L 66.14 60.32"/>
+    <path fill="none" d="M105.31,59.12 L 105.31 60.32"/>
   </g>
 </g>
-<g clip-path="url(#img-b31536fd-6)">
-  <g id="img-b31536fd-7">
-    <g pointer-events="visible" opacity="1" fill="#000000" fill-opacity="0.000" stroke="#000000" stroke-opacity="0.000" class="guide background" id="img-b31536fd-8">
-      <rect x="16.83" y="5" width="118.17" height="53.72"/>
+<g clip-path="url(#img-00969fa9-6)">
+  <g id="img-00969fa9-7">
+    <g pointer-events="visible" opacity="1" fill="#000000" fill-opacity="0.000" stroke="#000000" stroke-opacity="0.000" class="guide background" id="img-00969fa9-8">
+      <rect x="18.5" y="5" width="116.5" height="53.72"/>
     </g>
-    <g class="guide ygridlines xfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="img-b31536fd-9">
-      <path fill="none" d="M16.83,56.72 L 135 56.72"/>
-      <path fill="none" d="M16.83,46.77 L 135 46.77"/>
-      <path fill="none" d="M16.83,36.83 L 135 36.83"/>
-      <path fill="none" d="M16.83,26.89 L 135 26.89"/>
-      <path fill="none" d="M16.83,16.94 L 135 16.94"/>
-      <path fill="none" d="M16.83,7 L 135 7"/>
+    <g class="guide ygridlines xfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="img-00969fa9-9">
+      <path fill="none" d="M18.5,56.72 L 135 56.72"/>
+      <path fill="none" d="M18.5,44.29 L 135 44.29"/>
+      <path fill="none" d="M18.5,31.86 L 135 31.86"/>
+      <path fill="none" d="M18.5,19.43 L 135 19.43"/>
+      <path fill="none" d="M18.5,7 L 135 7"/>
     </g>
-    <g class="guide xgridlines yfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="img-b31536fd-10">
-      <path fill="none" d="M18.83,5 L 18.83 58.72"/>
-      <path fill="none" d="M47.37,5 L 47.37 58.72"/>
-      <path fill="none" d="M75.91,5 L 75.91 58.72"/>
-      <path fill="none" d="M104.46,5 L 104.46 58.72"/>
+    <g class="guide xgridlines yfixed" stroke-dasharray="0.5,0.5" stroke-width="0.2" stroke="#D0D0E0" id="img-00969fa9-10">
+      <path fill="none" d="M20.5,5 L 20.5 58.72"/>
+      <path fill="none" d="M76.75,5 L 76.75 58.72"/>
       <path fill="none" d="M133,5 L 133 58.72"/>
     </g>
-    <g class="plotpanel" id="img-b31536fd-11">
-      <g class="geometry" id="img-b31536fd-12">
-        <g class="color_RGBA{Float32}(0.0f0,0.74736935f0,1.0f0,1.0f0)" stroke="#FFFFFF" stroke-width="0.3" fill="#00BFFF" id="img-b31536fd-13">
-          <use xlink:href="#img-b31536fd-14" x="99.3" y="30.11"/>
-          <use xlink:href="#img-b31536fd-14" x="32.09" y="35.49"/>
-          <use xlink:href="#img-b31536fd-14" x="25.3" y="31.78"/>
-          <use xlink:href="#img-b31536fd-14" x="68.32" y="17.61"/>
-          <use xlink:href="#img-b31536fd-14" x="97.61" y="26.09"/>
-          <use xlink:href="#img-b31536fd-14" x="44.12" y="25.97"/>
-          <use xlink:href="#img-b31536fd-14" x="97.44" y="52.86"/>
-          <use xlink:href="#img-b31536fd-14" x="45.76" y="39.28"/>
-          <use xlink:href="#img-b31536fd-14" x="112.05" y="10.21"/>
-          <use xlink:href="#img-b31536fd-14" x="57.63" y="31.46"/>
-          <use xlink:href="#img-b31536fd-14" x="56.77" y="21.86"/>
-          <use xlink:href="#img-b31536fd-14" x="51.88" y="15.17"/>
-          <use xlink:href="#img-b31536fd-14" x="63.52" y="44.43"/>
-          <use xlink:href="#img-b31536fd-14" x="25.93" y="45.72"/>
-          <use xlink:href="#img-b31536fd-14" x="43.06" y="27.73"/>
-          <use xlink:href="#img-b31536fd-14" x="70.09" y="49.76"/>
-          <use xlink:href="#img-b31536fd-14" x="119.15" y="33.59"/>
-          <use xlink:href="#img-b31536fd-14" x="112.26" y="52.07"/>
-          <use xlink:href="#img-b31536fd-14" x="66.02" y="52.11"/>
-          <use xlink:href="#img-b31536fd-14" x="30" y="27.31"/>
+    <g class="plotpanel" id="img-00969fa9-11">
+      <g class="geometry" id="img-00969fa9-12">
+        <g class="color_RGBA{Float32}(0.0f0,0.74736935f0,1.0f0,1.0f0)" stroke="#FFFFFF" stroke-width="0.3" fill="#00BFFF" id="img-00969fa9-13">
+          <use xlink:href="#img-00969fa9-14" x="61.04" y="51.57"/>
+          <use xlink:href="#img-00969fa9-14" x="82.07" y="20.51"/>
+          <use xlink:href="#img-00969fa9-14" x="45.9" y="10.34"/>
+          <use xlink:href="#img-00969fa9-14" x="90.8" y="31.32"/>
+          <use xlink:href="#img-00969fa9-14" x="92.94" y="31.89"/>
+          <use xlink:href="#img-00969fa9-14" x="130.7" y="8.39"/>
+          <use xlink:href="#img-00969fa9-14" x="67.25" y="46.03"/>
+          <use xlink:href="#img-00969fa9-14" x="45.04" y="52.34"/>
+          <use xlink:href="#img-00969fa9-14" x="81.45" y="11.5"/>
+          <use xlink:href="#img-00969fa9-14" x="55.79" y="49.76"/>
+          <use xlink:href="#img-00969fa9-14" x="102.91" y="47.86"/>
+          <use xlink:href="#img-00969fa9-14" x="92.95" y="20.85"/>
+          <use xlink:href="#img-00969fa9-14" x="104.28" y="29.53"/>
+          <use xlink:href="#img-00969fa9-14" x="26.09" y="36.41"/>
+          <use xlink:href="#img-00969fa9-14" x="42.8" y="34.46"/>
+          <use xlink:href="#img-00969fa9-14" x="72.18" y="46.54"/>
+          <use xlink:href="#img-00969fa9-14" x="74.91" y="22.47"/>
+          <use xlink:href="#img-00969fa9-14" x="51.15" y="52.82"/>
+          <use xlink:href="#img-00969fa9-14" x="66.14" y="45.19"/>
+          <use xlink:href="#img-00969fa9-14" x="105.31" y="50.13"/>
         </g>
       </g>
     </g>
   </g>
 </g>
-  <g class="guide ylabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="img-b31536fd-15">
-    <text x="15.83" y="56.72" text-anchor="end" dy="0.35em">0.0</text>
-    <text x="15.83" y="46.77" text-anchor="end" dy="0.35em">0.2</text>
-    <text x="15.83" y="36.83" text-anchor="end" dy="0.35em">0.4</text>
-    <text x="15.83" y="26.89" text-anchor="end" dy="0.35em">0.6</text>
-    <text x="15.83" y="16.94" text-anchor="end" dy="0.35em">0.8</text>
-    <text x="15.83" y="7" text-anchor="end" dy="0.35em">1.0</text>
+  <g class="guide ylabels" font-size="2.82" font-family="'PT Sans Caption','Helvetica Neue','Helvetica',sans-serif" fill="#6C606B" id="img-00969fa9-15">
+    <text x="17.5" y="56.72" text-anchor="end" dy="0.35em">0.00</text>
+    <text x="17.5" y="44.29" text-anchor="end" dy="0.35em">0.25</text>
+    <text x="17.5" y="31.86" text-anchor="end" dy="0.35em">0.50</text>
+    <text x="17.5" y="19.43" text-anchor="end" dy="0.35em">0.75</text>
+    <text x="17.5" y="7" text-anchor="end" dy="0.35em">1.00</text>
   </g>
-  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="img-b31536fd-16">
+  <g font-size="3.88" font-family="'PT Sans','Helvetica Neue','Helvetica',sans-serif" fill="#564A55" stroke="#000000" stroke-opacity="0.000" id="img-00969fa9-16">
     <text x="8.81" y="31.86" text-anchor="end" dy="0.35em">y</text>
   </g>
 </g>
 <defs>
-  <clipPath id="img-b31536fd-4">
-  <path d="M16.83,58.72 L 135 58.72 135 60.72 16.83 60.72" />
+  <clipPath id="img-00969fa9-4">
+  <path d="M18.5,58.72 L 135 58.72 135 60.72 18.5 60.72" />
 </clipPath>
-  <clipPath id="img-b31536fd-6">
-  <path d="M16.83,5 L 135 5 135 58.72 16.83 58.72" />
+  <clipPath id="img-00969fa9-6">
+  <path d="M18.5,5 L 135 5 135 58.72 18.5 58.72" />
 </clipPath>
-  <g id="img-b31536fd-14">
+  <g id="img-00969fa9-14">
     <circle cx="0" cy="0" r="0.9"/>
   </g>
 </defs>

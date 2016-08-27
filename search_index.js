@@ -189,7 +189,15 @@ var documenterSearchIndex = {"docs": [
     "page": "Geometries",
     "title": "Geometries",
     "category": "section",
-    "text": "Gadfly's supported plot typesPages = map(file -> joinpath(\"..\", \"lib\", \"geoms\", file), readdir(joinpath(\"..\", \"lib\", \"geoms\")))\nDepth = 1"
+    "text": "Geometries are responsible for actually doing the drawing. A geometry takes as input one or more aesthetics, and used data bound to these aesthetics to draw things. For instance, the Geom.point geometry draws points using the x and y aesthetics, while the Geom.line geometry draws lines with those same two aesthetics."
+},
+
+{
+    "location": "man/geometries.html#Available-Geometries-1",
+    "page": "Geometries",
+    "title": "Available Geometries",
+    "category": "section",
+    "text": "Pages = map(file -> joinpath(\"..\", \"lib\", \"geoms\", file), readdir(joinpath(\"..\", \"lib\", \"geoms\")))\nDepth = 1"
 },
 
 {
@@ -205,7 +213,15 @@ var documenterSearchIndex = {"docs": [
     "page": "Guides",
     "title": "Guides",
     "category": "section",
-    "text": "Guides modify titles, labels, and axesPages = map(file -> joinpath(\"..\", \"lib\", \"guides\", file), readdir(joinpath(\"..\", \"lib\", \"guides\")))\nDepth = 1"
+    "text": "Very similar to Geometries are guides, which draw graphics supporting the actual visualization, such as axis ticks and labels and color keys. The major distinction is that geometries always draw within the rectangular plot frame, while guides have some special layout considerations."
+},
+
+{
+    "location": "man/guides.html#Available-Guides-1",
+    "page": "Guides",
+    "title": "Available Guides",
+    "category": "section",
+    "text": "Pages = map(file -> joinpath(\"..\", \"lib\", \"guides\", file), readdir(joinpath(\"..\", \"lib\", \"guides\")))\nDepth = 1"
 },
 
 {
@@ -221,7 +237,15 @@ var documenterSearchIndex = {"docs": [
     "page": "Statistics",
     "title": "Statistics",
     "category": "section",
-    "text": "Statistics carry out calculations on aesthetics prior to plottingPages = map(file -> joinpath(\"..\", \"lib\", \"stats\", file), readdir(joinpath(\"..\", \"lib\", \"stats\")))\nDepth = 1"
+    "text": "Statistics are functions taking as input one or more aesthetics, operating on those values, then output to one or more aesthetics. For example, drawing of boxplots typically uses the boxplot statistic (Stat.boxplot) that takes as input the x and y aesthetic, and outputs the middle, and upper and lower hinge, and upper and lower fence aesthetics."
+},
+
+{
+    "location": "man/stats.html#Available-Statistics-1",
+    "page": "Statistics",
+    "title": "Available Statistics",
+    "category": "section",
+    "text": "Pages = map(file -> joinpath(\"..\", \"lib\", \"stats\", file), readdir(joinpath(\"..\", \"lib\", \"stats\")))\nDepth = 1"
 },
 
 {
@@ -237,7 +261,15 @@ var documenterSearchIndex = {"docs": [
     "page": "Coords",
     "title": "Coordinates",
     "category": "section",
-    "text": "Coordinate systems are mappings between a coordinate space and the 2D rendered outputPages = map(file -> joinpath(\"..\", \"lib\", \"coords\", file), readdir(joinpath(\"..\", \"lib\", \"coords\")))\nDepth = 1"
+    "text": "Coordinate systems are mappings between a coordinate space and the 2D rendered output."
+},
+
+{
+    "location": "man/coords.html#Available-Coordinates-1",
+    "page": "Coords",
+    "title": "Available Coordinates",
+    "category": "section",
+    "text": "Pages = map(file -> joinpath(\"..\", \"lib\", \"coords\", file), readdir(joinpath(\"..\", \"lib\", \"coords\")))\nDepth = 1"
 },
 
 {
@@ -253,7 +285,15 @@ var documenterSearchIndex = {"docs": [
     "page": "Scales",
     "title": "Scales",
     "category": "section",
-    "text": "Scales modify the relationship between data and aestheticsPages = map(file -> joinpath(\"..\", \"lib\", \"scales\", file), readdir(joinpath(\"..\", \"lib\", \"scales\")))\nDepth = 1"
+    "text": "Scales, similarly to Statistics, apply a transformation to the original data, typically mapping one aesthetic to the same aesthetic, while retaining the original value. For example, the Scale.x_log10 aesthetic maps the  x aesthetic back to the x aesthetic after applying a log10 transformation, but keeps track of the original value so that data points are properly identified."
+},
+
+{
+    "location": "man/scales.html#Available-Scales-1",
+    "page": "Scales",
+    "title": "Available Scales",
+    "category": "section",
+    "text": "Pages = map(file -> joinpath(\"..\", \"lib\", \"scales\", file), readdir(joinpath(\"..\", \"lib\", \"scales\")))\nDepth = 1"
 },
 
 {
@@ -1845,7 +1885,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Scale.x_continuous",
     "title": "Arguments",
     "category": "section",
-    "text": "minvalue: Set scale lower bound to be ≤ this value. If you need to strictly set plot limits use Coord.cartesian instead.\nmaxvalue: Set scale lower bound to be ≥ this value.\nlabels: Either a Function or nothing. When a function is given, values are formatted using this function. The function should map a value in x to a string giving its label. If the scale applies a transformation, transformed label values will be passed to this function.\nformat: How numbers should be formatted. One of :plain, :scientific, :engineering, or :auto. The default in :auto which prints very large or very small numbers in scientific notation, and other numbers plainly.\nscalable: When set to false, scale is fixed when zooming (default: true)"
+    "text": "minvalue: Set scale lower bound to be ≤ this value.\nmaxvalue: Set scale lower bound to be ≥ this value.note: Note\nminvalue and maxvalue here are soft bounds, Gadfly may choose to ignore them when constructing an optimal plot. Use Coord.cartesian to enforce a hard bound.labels: Either a Function or nothing. When a function is given, values are formatted using this function. The function should map a value in x to a string giving its label. If the scale applies a transformation, transformed label values will be passed to this function.\nformat: How numbers should be formatted. One of :plain, :scientific, :engineering, or :auto. The default in :auto which prints very large or very small numbers in scientific notation, and other numbers plainly.\nscalable: When set to false, scale is fixed when zooming (default: true)"
 },
 
 {
@@ -1933,7 +1973,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Scale.y_continuous",
     "title": "Arguments",
     "category": "section",
-    "text": "minvalue: Set scale lower bound to be ≤ this value.  If you need to strictly set plot limits use Coord.cartesian instead.\nmaxvalue: Set scale lower bound to be ≥ this value.\nlabels: Either a Function or nothing. When a function is given, values are formatted using this function. The function should map a value in x to a string giving its label. If the scale applies a transformation, transformed label values will be passed to this function.\nformat: How numbers should be formatted. One of :plain, :scientific, :engineering, or :auto. The default in :auto which prints very large or very small numbers in scientific notation, and other numbers plainly.\nscalable: When set to false, scale is fixed when zooming (default: true)"
+    "text": "minvalue: Set scale lower bound to be ≤ this value.\nmaxvalue: Set scale lower bound to be ≥ this value.note: Note\nminvalue and maxvalue here are soft bounds, Gadfly may choose to ignore them when constructing an optimal plot. Use Coord.cartesian to enforce a hard bound.labels: Either a Function or nothing. When a function is given, values are formatted using this function. The function should map a value in x to a string giving its label. If the scale applies a transformation, transformed label values will be passed to this function.\nformat: How numbers should be formatted. One of :plain, :scientific, :engineering, or :auto. The default in :auto which prints very large or very small numbers in scientific notation, and other numbers plainly.\nscalable: When set to false, scale is fixed when zooming (default: true)"
 },
 
 {
